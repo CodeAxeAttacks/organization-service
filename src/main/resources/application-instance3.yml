@@ -1,0 +1,11 @@
+server:
+  port: 8083
+
+spring:
+  cloud:
+    consul:
+      discovery:
+        instance-id: ${spring.application.name}:instance3:${server.port}
+        tags:
+          - instance=3
+          - version=1.0.0

@@ -1,0 +1,3 @@
+cd src/main/resources
+
+keytool -genkeypair -alias service1 -keyalg RSA -keysize 2048 -storetype PKCS12 -keystore keystore.p12 -validity 3650 -dname "CN=localhost, OU=IT, O=Example, L=Stockholm, S=Stockholm, C=SE" -storepass 123-keypass 123
